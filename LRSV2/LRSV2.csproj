@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net9.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWindowsForms>true</UseWindowsForms>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <ApplicationIcon>favicon.ico</ApplicationIcon>
+        <Company>hauchet</Company>
+        <Product>湘潭大学图书馆预约系统</Product>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AntdUI" Version="1.9.12" />
+      <PackageReference Include="EPPlus" Version="8.0.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Welcome.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Login.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Register.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="User.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Info.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Admin.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="addUserForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="addSeatForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Register.resx">
+        <CustomToolNamespace>LRSV2.Properties</CustomToolNamespace>
+      </EmbeddedResource>
+    </ItemGroup>
+
+</Project>
